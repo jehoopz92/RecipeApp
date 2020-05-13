@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "precommit": "NODE_ENV=production lint-staged",
+  "homepage": "http://jehoopz92.github.io/RecipeApp/",
   "dependencies": {
     "axios": "^0.19.0",
     "react": "^16.9.0",
@@ -14,7 +15,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,6 +40,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
+    "gh-pages": "^2.1.1",
     "husky": "^3.0.3",
     "lint-staged": "^9.2.1",
     "pretty-quick": "^1.11.1"
